@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction</title>
+</head>
+<body>
+    <h1>Customer Churn Prediction</h1>
+    <form action="/predict" method="POST">
+       
+        <label for="MonthlyCharges">Monthly Charges:</label>
+        <input type="number" id="MonthlyCharges" name="MonthlyCharges" required><br><br>
+
+        <label for="TotalCharges">Total Charges:</label>
+        <input type="number" id="TotalCharges" name="TotalCharges" required><br><br>
+
+        <label for="ServiceUsage1">Service Usage 1:</label>
+        <input type="number" id="ServiceUsage1" name="ServiceUsage1" required><br><br>
+
+        <label for="ServiceUsage2">Service Usage 2:</label>
+        <input type="number" id="ServiceUsage2" name="ServiceUsage2" required><br><br>
+
+        <label for="ServiceUsage3">Service Usage 3:</label>
+        <input type="number" id="ServiceUsage3" name="ServiceUsage3" required><br><br>
+
+        <label for="Payment_BankTransfer">Payment Bank Transfer:</label>
+        <input type="number" id="Payment_BankTransfer" name="Payment_BankTransfer" required><br><br>
+
+        <label for="Payment_Cash">Payment Cash:</label>
+        <input type="number" id="Payment_Cash" name="Payment_Cash" required><br><br>
+
+        <label for="Payment_CreditCard">Payment Credit Card:</label>
+        <input type="number" id="Payment_CreditCard" name="Payment_CreditCard" required><br><br>
+
+        <label for="Payment_PayPal">Payment PayPal:</label>
+        <input type="number" id="Payment_PayPal" name="Payment_PayPal" required><br><br>
+
+        <label for="AvgSpendPerMonth">Average Spend per Month:</label>
+        <input type="number" id="AvgSpendPerMonth" name="AvgSpendPerMonth" required><br><br>
+
+        <input type="submit" value="Get Prediction">
+    </form>
+
+</body>
+</html>
