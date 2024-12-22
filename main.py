@@ -1,12 +1,12 @@
 from flask import Flask, request, render_template, jsonify
-import pickle
+import joblib
 import numpy as np
 
 # Load the pre-trained churn prediction model
 try:
-    model = pickle.load(open("churn_model.pkl", "rb"))
+    model = joblib.load('churn_model.joblib')
 except FileNotFoundError:
-    raise Exception("The churn_model.pkl file was not found. Please ensure it is in the correct directory.")
+    raise Exception("The churn_model.joblib file was not found. Please ensure it is in the correct directory.")
 
 # Initialize Flask app
 main = Flask(__name__)
