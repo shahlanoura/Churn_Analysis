@@ -43,4 +43,4 @@ def predict_churn():
     })
 
 if __name__ == "__main__":
-    main.run(debug=True)
+    pass
